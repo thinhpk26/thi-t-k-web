@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phiếu 3</title>
+</head>
+<style>
+    * {
+        color: rgb(4, 173, 4);
+    }
+    .cursor-pointer {
+        cursor: pointer;
+    }
+    table, td, .div-submit {
+        border: 1px solid #000;
+        border-collapse: collapse;
+    }
+    input {
+        color: #000
+    }
+    td {
+        padding: 8px;
+    }
+    .bg-green {
+        background-color: rgb(124, 204, 124);
+    }
+    .text-black {
+        color: #000;
+    }
+</style>
+<body>
+    <form action="#" method="get" style="display: inline-block">
+        <h3>Phiếu đăng ký tham gia chương trình khuyến mãi</h3>
+        <table class='bg-green' style="width: 100%">
+            <tbody>
+                <tr>
+                    <td>
+                        <label class="cursor-pointer" for="username">Họ và tên</label>
+                    </td>
+                    <td>
+                        <input type="text" id="username" name="username" placeholder="vd: Nguyễn Ngọc Quỳnh Nga" maxlength="50">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="cursor-pointer" for="address">Địa chỉ</label>
+                    </td>
+                    <td>
+                        <input type="text" id="address" name="address" placeholder="vd: Số 123, Hai Bà trưng" maxlength="50">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="cursor-pointer" for="phonenumber">Điện thoại</label>
+                    </td>
+                    <td>
+                        <input type="text" id="phonenumber" name="phonenumber" placeholder="vd: 0123456789" maxlength="10">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Phái</p>
+                    </td>
+                    <td>
+                        <input class="cursor-pointer" type="radio" id="male" name="Phái">
+                        <label class="cursor-pointer" for="male">Nam</label>
+                        <input class="cursor-pointer" type="radio" id="female" name="Phái">
+                        <label class="cursor-pointer" for="female">Nữ</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="cursor-pointer" for="job">Nghề Nghiệp</label>
+                    </td>
+                    <td>
+                        <select class="text-black" name="job" id="job">
+                            <option class="text-black" value="sale">Bán hàng</option>
+                            <option class="text-black" value="pilot">Phi công</option>
+                            <option class="text-black" value="engineer">Kĩ sư</option>
+                            <option class="text-black" value="teacher">Giáo viên</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Chọn sản phẩm</p>
+                    </td>
+                    <td>
+                        <input class="cursor-pointer" type="checkbox" id="kem_danh_rang" name="kem_danh_rang">
+                        <label class="cursor-pointer text-black" for="kem_danh_rang">Kem đánh răng</label><br>
+                        <input class="cursor-pointer" type="checkbox" id="bot_giat" name="bot_giat">
+                        <label class="cursor-pointer text-black" for="bot_giat">Bột giặt</label><br>
+                        <input class="cursor-pointer" type="checkbox" id="dau_goi_dau" name="dau_goi_dau">
+                        <label class="cursor-pointer text-black" for="dau_goi_dau">Dầu gội đầu</label><br>
+                        <input class="cursor-pointer" type="checkbox" id="sua_tam" name="sua_tam">
+                        <label class="cursor-pointer text-black" for="sua_tam">Sữa tắm</label><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="cursor-pointer" for="numberPeople">Họ và tên</label>
+                    </td>
+                    <td>
+                        <input type="number" id="numberPeople" name="numberPeople" placeholder="vd: 250000" min="1">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="border-collapse: unset">
+                        <div style="display: flex">
+                            <button class="text-black" type="submit" style="margin: auto">Đồng ý</button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>
